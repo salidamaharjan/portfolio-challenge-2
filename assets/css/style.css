@@ -69,6 +69,29 @@ main section > h2 {
   font-weight: bold;
   font-size: 2rem;
 }
-main section > p {
-    font-size: 0.8rem;
+/* p of about me section */
+main .about-me > p {
+  font-size: 0.8rem;
+}
+
+/* css for work-details */
+.work-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 75px 75px;
+    width: 100%;
+    gap: 1rem;
+}
+.work-details .work-detail:nth-child(1) {
+    grid-column: span 2;
+}
+.work-details .work-detail img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 5px solid var(--color-primary)
+}
+/* all section under main same right padding */
+main section {
+    padding-right: var(--right-screen-gap) ;
 }
