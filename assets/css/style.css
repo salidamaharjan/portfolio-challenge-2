@@ -18,7 +18,7 @@ header h1 {
   color: var(--color-grey);
   background-color: var(--color-primary);
   padding-left: 3rem;
-  padding-right: 0.5rem; 
+  padding-right: 0.5rem;
   margin-bottom: 0.3rem;
   font-size: 2rem;
   font-weight: bold;
@@ -28,24 +28,44 @@ header nav a {
   margin-left: 0.3rem;
 }
 header nav {
-    margin-right: var(--right-screen-gap)
+  margin-right: var(--right-screen-gap);
 }
 /* css for hero section */
 main figure img {
-    max-height: 90px;
-    width: 100%;
-    /* enlarge the image without stretching */
-    object-fit: cover;
+  max-height: 90px;
+  width: 100%;
+  /* enlarge the image without stretching */
+  object-fit: cover;
 }
 main figure {
-    position: relative;
+  position: relative;
 }
 /* css for subtitle */
 main figure .subtitle {
-    background-color: var(--color-primary);
-    color: var(--color-grey);
-    display: inline;
-    position: absolute;
-    bottom: 1rem;
-    right: var(--right-screen-gap);
+  background-color: var(--color-primary);
+  color: var(--color-grey);
+  display: inline;
+  position: absolute;
+  bottom: 1rem;
+  right: var(--right-screen-gap);
+}
+/* css for section */
+
+main section {
+  color: var(--color-font);
+  display: flex;
+  gap: 1.5rem;
+}
+
+main section > h2 {
+  /* setting min and max width so it is constant */
+  --width: 200px;
+  min-width: var(--width);
+  max-width: var(--width);
+  text-align: end;
+  border-right: 2px solid var(--color-font);
+  padding-right: 0.3rem;
+  padding-left: 4rem;
+  font-weight: bold;
+  font-size: 2rem;
 }
