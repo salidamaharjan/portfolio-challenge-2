@@ -4,6 +4,7 @@
   --color-grey: rgb(50, 52, 60);
   --color-font: rgb(72, 87, 116);
   --color-bg: rgb(238, 238, 246);
+  --right-screen-gap: 5rem;
 }
 /* css for header */
 header {
@@ -27,11 +28,24 @@ header nav a {
   margin-left: 0.3rem;
 }
 header nav {
-    margin-right: 5rem;
+    margin-right: var(--right-screen-gap)
 }
 /* css for hero section */
 main figure img {
     max-height: 90px;
     width: 100%;
+    /* enlarge the image without stretching */
     object-fit: cover;
+}
+main figure {
+    position: relative;
+}
+/* css for subtitle */
+main figure .subtitle {
+    background-color: var(--color-primary);
+    color: var(--color-grey);
+    display: inline;
+    position: absolute;
+    bottom: 1rem;
+    right: var(--right-screen-gap);
 }
