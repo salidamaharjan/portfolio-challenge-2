@@ -78,7 +78,7 @@ main .about-me > p {
 .work-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 75px 75px;
+    grid-template-rows: 150px 85px 85px;
     width: 100%;
     gap: 1rem;
 }
@@ -94,4 +94,18 @@ main .about-me > p {
 /* all section under main same right padding */
 main section {
     padding-right: var(--right-screen-gap) ;
+}
+/* css for float */
+.work-details .work-detail .float {
+    background-color: var(--color-primary);
+    color: var(--color-grey);
+    position: absolute;
+    bottom: 1rem;
+    padding: 0.2rem 0.5rem;
+}
+.work-detail {
+    position: relative;
+}
+.work-detail .float div:nth-child(2) {
+    font-size: 0.6rem;
 }
