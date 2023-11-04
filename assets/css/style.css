@@ -16,9 +16,15 @@ header {
 header h1 {
   color: var(--color-grey);
   background-color: var(--color-primary);
-  
+  padding-left: 3rem;
+  padding-right: 0.5rem; 
+  margin-bottom: 0.3rem;
 }
 header nav a {
   color: var(--color-primary);
+  margin-left: 0.3rem;
+}
+header nav {
+    margin-right: 5rem;
 }
 
