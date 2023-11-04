@@ -1,0 +1,7 @@
+/* creating css variables for common properties*/
+:root {
+    --color-primary: rgb(158, 202, 205);
+    --color-grey: rgb(50, 52, 60);
+    --color-font : rgb(72, 87, 116);
+    --color-bg: rgb(238, 238, 246);
+}
