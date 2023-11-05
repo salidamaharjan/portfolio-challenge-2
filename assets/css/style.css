@@ -117,3 +117,6 @@ main section {
   align-items: center;
   width: 100%;
 }
+.contact-me div a {
+  color: var(--color-font);
+}
