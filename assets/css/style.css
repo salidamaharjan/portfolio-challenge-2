@@ -91,6 +91,14 @@ main .about-me > p {
   width: 100%;
   object-fit: cover;
   border: 5px solid var(--color-primary);
+  opacity: 0.5;
+}
+/* css for opacity on image */
+.work-detail {
+  background-color: rgb(115, 140, 163);
+}
+.work-details .work-detail img:hover {
+  opacity: 1;
 }
 /* all section under main same right padding */
 main section {
