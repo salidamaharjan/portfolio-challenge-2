@@ -50,13 +50,14 @@ main figure .subtitle {
   right: var(--right-screen-gap);
 }
 /* css for section */
-
+footer section,
 main section {
   color: var(--color-font);
   display: flex;
   gap: 1.5rem;
 }
 
+footer section > h2,
 main section > h2 {
   /* setting min and max width so it is constant */
   --width: 200px;
@@ -76,36 +77,43 @@ main .about-me > p {
 
 /* css for work-details */
 .work-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 85px 85px;
-    width: 100%;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 85px 85px;
+  width: 100%;
+  gap: 1rem;
 }
 .work-details .work-detail:nth-child(1) {
-    grid-column: span 2;
+  grid-column: span 2;
 }
 .work-details .work-detail img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border: 5px solid var(--color-primary)
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 5px solid var(--color-primary);
 }
 /* all section under main same right padding */
 main section {
-    padding-right: var(--right-screen-gap) ;
+  padding-right: var(--right-screen-gap);
 }
 /* css for float */
 .work-details .work-detail .float {
-    background-color: var(--color-primary);
-    color: var(--color-grey);
-    position: absolute;
-    bottom: 1rem;
-    padding: 0.2rem 0.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-grey);
+  position: absolute;
+  bottom: 1rem;
+  padding: 0.2rem 0.5rem;
 }
 .work-detail {
-    position: relative;
+  position: relative;
 }
 .work-detail .float div:nth-child(2) {
-    font-size: 0.6rem;
+  font-size: 0.6rem;
+}
+/* css for class contact me under footer */
+.contact-me {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
 }
