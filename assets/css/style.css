@@ -5,6 +5,7 @@
   --color-font: rgb(72, 87, 116);
   --color-bg: rgb(238, 238, 246);
   --right-screen-gap: 5rem;
+  --link-underline-offset: 0.3rem;
 }
 * {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -29,6 +30,7 @@ header h1 {
 }
 header nav a {
   color: var(--color-primary);
+  text-underline-offset: var(--link-underline-offset);
 }
 header nav {
   margin-right: var(--right-screen-gap);
@@ -132,6 +134,7 @@ main section {
 }
 .contact-me div a {
   color: var(--color-font);
+  text-underline-offset: var(--link-underline-offset);
 }
 /* adding gap to section of main */
 main {
