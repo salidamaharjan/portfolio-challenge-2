@@ -6,6 +6,10 @@
   --color-bg: rgb(238, 238, 246);
   --right-screen-gap: 5rem;
 }
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 /* css for header */
 header {
   background-color: var(--color-grey);
