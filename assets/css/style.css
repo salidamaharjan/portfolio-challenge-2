@@ -64,7 +64,7 @@ main section > h2 {
   min-width: var(--width);
   max-width: var(--width);
   text-align: end;
-  border-right: 2px solid var(--color-font);
+  border-right: 3px solid var(--color-font);
   padding-right: 0.3rem;
   padding-left: 4rem;
   font-weight: bold;
@@ -136,4 +136,38 @@ main {
 }
 footer {
   margin-top: 1rem;
+}
+
+/* CSS for responsive screen */
+@media screen and (max-width: 800px) {
+  :root {
+    --right-screen-gap: 3rem;
+  }
+  header {
+    flex-direction: column;
+  }
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header nav {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  footer section,
+  main section {
+    flex-direction: column;
+    padding-left: var(--right-screen-gap);
+  }
+
+  footer section h2,
+  main section h2 {
+    border-bottom: 3px solid var(--color-font);
+    border-right: 0;
+    min-width: none;
+    max-width: none;
+    text-align: left;
+    padding: 0;
+    padding-bottom: 0.5rem;
+  }
 }
