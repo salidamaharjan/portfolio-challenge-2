@@ -25,10 +25,11 @@ header h1 {
 }
 header nav a {
   color: var(--color-primary);
-  margin-left: 0.3rem;
 }
 header nav {
   margin-right: var(--right-screen-gap);
+  display: flex;
+  gap: 1rem;
 }
 /* css for hero section */
 main figure img {
@@ -138,7 +139,7 @@ footer {
   margin-top: 1rem;
 }
 
-/* CSS for responsive screen */
+/* CSS for responsive screen medium*/
 @media screen and (max-width: 800px) {
   :root {
     --right-screen-gap: 3rem;
@@ -151,9 +152,11 @@ footer {
     text-align: center;
   }
   header nav {
+    margin: 0;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+
   footer section,
   main section {
     flex-direction: column;
@@ -170,4 +173,49 @@ footer {
     padding: 0;
     padding-bottom: 0.5rem;
   }
+}
+
+/* CSS for small screen */
+@media screen and (max-width: 400px) {
+  header nav a {
+    font-size: 1.5rem;
+  }
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main section,
+  footer section {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  main figure .subtitle{
+    left: var(--right-screen-gap);
+    text-align: center;
+  }
+  main .about-me > p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .work-details {
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(5,150px);
+  }
+  .work-details .work-detail:nth-child(1) {
+    grid-column: span 1;
+  }
+  .work-details .work-detail .float {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+  }
+  .work-detail .float div:nth-child(2) {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+footer .contact-me {
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
 }
