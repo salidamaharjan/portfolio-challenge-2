@@ -191,6 +191,7 @@ footer {
   main figure .subtitle{
     left: var(--right-screen-gap);
     text-align: center;
+    font-size: 1.2rem;
   }
   main .about-me > p {
     font-size: 1.2rem;
