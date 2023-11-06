@@ -140,7 +140,7 @@ footer {
 }
 
 /* CSS for responsive screen medium*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   :root {
     --right-screen-gap: 3rem;
   }
@@ -176,7 +176,7 @@ footer {
 }
 
 /* CSS for small screen */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 576px) {
   header nav a {
     font-size: 1.5rem;
   }
