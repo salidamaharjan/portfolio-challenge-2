@@ -188,7 +188,7 @@ footer {
   footer section {
     padding: 0 1.5rem 0 1.5rem;
   }
-  main figure .subtitle{
+  main figure .subtitle {
     left: var(--right-screen-gap);
     text-align: center;
     font-size: 1.2rem;
@@ -199,7 +199,7 @@ footer {
   }
   .work-details {
     grid-template-columns: 1fr;
-    grid-template-rows:repeat(5,150px);
+    grid-template-rows: repeat(5, 150px);
   }
   .work-details .work-detail:nth-child(1) {
     grid-column: span 1;
@@ -212,11 +212,11 @@ footer {
   .work-detail .float div:nth-child(2) {
     font-size: 1rem;
     padding-top: 0.5rem;
-}
-footer .contact-me {
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 1.5rem;
-  gap: 1rem;
-}
+  }
+  footer .contact-me {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
 }
