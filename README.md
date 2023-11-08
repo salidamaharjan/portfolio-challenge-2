@@ -10,6 +10,7 @@
 * Required semantic html tag used and placeholder images were linked.
 * Styling given using CSS variable, CSS selectors, flex and grid layout, pseudo-class.
 * The links on the tab will scroll down to the respected sections on the page.
+* When hovered on the images on the work section, the image gets brighter than other as if it is highlighted.
 * When click on the image of work section, will direct to the deployed application page.
 
 ### The page will look as follows in the medium and small screen as it reaches certain break point.
