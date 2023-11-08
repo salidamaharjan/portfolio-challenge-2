@@ -1,5 +1,5 @@
 # Portfolio-Challenge-2
-**[My Portfolio Page link](https://salidamaharjan.github.io/portfolio-challenge-2/){:target="_blank"}**
+**[My Portfolio Page link](https://salidamaharjan.github.io/portfolio-challenge-2/)**
 
 ## Building a responsive portfolio using html, css.
 
