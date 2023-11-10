@@ -28,6 +28,14 @@ header h1 {
   margin-bottom: 0.3rem;
   font-size: 2rem;
   font-weight: bold;
+  height: 3rem;
+}
+header .avatar{
+  width: 4.5rem;
+}
+header div{
+  display: flex;
+  flex-direction: row;
 }
 header nav a {
   color: var(--color-primary);
